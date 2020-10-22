@@ -17,27 +17,60 @@
     # true colors
     enable_guicolors = false
     # Disable statusline separator, if you want to use other value, please
+    automatic_update = true
     # install nerd fonts
-    statusline_separator = "nil"
     statusline_iseparator = "bar"
     buffer_index_type = 4
-    windows_index_type = 3
-    enable_tabline_filetype_icon = false
+    enable_tabline_filetype_icon = true
     enable_statusline_mode = false
-    statusline_unicode_symbols = false
+    statusline_unicode_symbols = true
     # Enable vim compatible mode, avoid changing origin vim key bindings
     vimcompatible = true
-    project_rooter_patterns = ['.git/', '_darcs/', '.hg/', '.bzr/', '.svn/', '!node_packages/', 'vendor_portal_frontend/', '!node_modules/']
     project_rooter_outermost = false
     bootstrap_before = 'myspacevim#before'
     bootstrap_after = 'myspacevim#after'
     filetree_direction = "left"
+    enable_guicolor = true
+    statusline_separator = 'slant'
 
 # plugins
 [[custom_plugins]]
   repo = 'kien/ctrlp.vim'
   merge = true
 
+[[custom_plugins]]
+  repo = 'prettier/vim-prettier'
+  merge = true
+
+[[custom_plugins]]
+  repo = 'tpope/vim-surround'
+  merge = true
+
+[[custom_plugins]]
+  repo = 'jiangmiao/auto-pairs'
+  merge = true
+
+[[custom_plugins]]
+  repo = 'tpope/vim-fugitive'
+  merge = true
+
+[[custom_plugins]]
+  repo = 'mattn/emmet-vim'
+  merge = true
+
+[[custom_plugins]]
+  repo = 'vim-scripts/vim-gitgutter'
+  merge = true
+
+# themes
+[[custom_plugins]]
+  repo = "flazz/vim-colorschemes"
+  merged = false
+
+[[custom_plugins]]
+  repo = "dracula/vim"
+  name = "dracula"
+  merged = false
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
